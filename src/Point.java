@@ -51,7 +51,7 @@ public class Point {
 			pressure = pressure - 0.5f*(nVel+eVel+wVel+sVel);
 		}
 		else if(type == 2){
-			sinInput = (sinInput+60)%360;
+			sinInput = (sinInput+60)%361;
 			double radians = Math.toRadians(sinInput);
 			pressure = (float) (Math.sin(radians));
 		}
